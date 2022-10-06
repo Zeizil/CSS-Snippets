@@ -1,0 +1,106 @@
+  :root{
+    --gray: #353738;
+    --white: #fff;
+    --purple: rgb(168, 99, 185);
+    --indigo: rgb(110, 54, 184);
+  }
+  
+  body {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background-color: var(--gray);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--purple);
+  }
+
+  h3{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: var(--purple);
+  }
+  
+  header {
+    padding: 40px;
+    text-align: center;
+    background: var(--gray);
+    color: var(--white);
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--gray);
+  }
+  
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background: var(--gray);
+    color: var(--white);
+    margin-top: auto;
+  }
+
+  .codes{
+    flex: 4;
+    background-color: var(--gray);
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: flex-start;
+  }
+
+  .snippet{
+    border-style: dashed;
+    border-width: 2px;
+    border-color: var(--white);
+    padding: 10px;
+    margin: 30px;
+    flex: 0 0 300px;
+    color: var(--purple)
+  }
+
+  .copy {
+    font-family: monospace;
+    text-align: left;
+    border-style: none;
+    background: linear-gradient(0deg, var(--purple), var(--indigo));
+    color: var(--white)
+  }
+
+  .snippet h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--purple);
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 25px;
+    border-color: var(--white);
+    position: relative;
+    margin-top: -30px;
+    background-color: var(--gray);
+  }
+  
+  @media screen and (max-width: 992px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+}
